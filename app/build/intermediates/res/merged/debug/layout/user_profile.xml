@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#dedddd"
+    android:id="@+id/popup"
+    android:foregroundGravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="212dp"
+        android:layout_height="187dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Select Users&apos; Role : "
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|top"
+            android:textColor="#020000"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:text="Private"
+                android:id="@+id/master"
+                android:checked="false"
+                android:textColor="#020000"
+                android:clickable="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collaboration"
+                android:id="@+id/slave"
+                android:checked="false"
+                android:textColor="#020000"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dismiss"
+            android:id="@+id/buttonDismiss"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
